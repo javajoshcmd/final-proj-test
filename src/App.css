@@ -1,38 +1,39 @@
+body {
+  background-color: #141414;
+}
+
 .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #141414;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drink-name {
+  font-size: 120px;
+  font-weight: 400;
+  margin: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drink-method {
+  font-size: 20px;
+  margin: 2%;
+}
+.ingredients {
+  font-size: 20px;
+  margin: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.drink-thumb {
+  height: 500px;
+  width: 600px;
+  margin: 2%;
 }
-
-.App-link {
-  color: #61dafb;
+.glass-type {
+  font-size: 20px;
+  margin: 2%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-label {
+  font-size: 20px;
+  color: #ffffff;
 }
