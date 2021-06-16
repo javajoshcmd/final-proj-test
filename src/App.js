@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import Search from "./Components/Drinks"
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -27,48 +28,17 @@ const App = () => {
       setError(err.message);
     }
   };
-  const handleSearch = async (event) => {
-    setSearch(event.target.value);
-    await handleFetch()
-   
-  };
+
 
   if (error) return <h1>{error}</h1>;
   if (!loading)
-    return (
-      <div>
-        {/* <button onClick={handleFetch}>Load</button> */}
-        <div>
-          <form>
-            <label className="search-label">
-              Search for a Cocktail:
-              <input type="text" placeholder="search" value={search} ></input>
-            </label>
-            <button type="text" onClick={handleSearch} label="search">Search</button>
-          </form>
-        </div>
-      </div>
-    );
 
   return (
     <div className="App">
-      <div className="drink-name"> {data.drinks[0].strDrink}</div>
       <div>
-        <img
-          className="drink-thumb"
-          alt="drink"
-          src={data.drinks[0].strDrinkThumb}
-        ></img>
+        <button onClick={handleFetch}>Search for a cocktail</button>
       </div>
-      <div className="ingredients">
-        Ingredients: {data.drinks[0].strIngredient1},
-        {data.drinks[0].strIngredient2},{data.drinks[0].strIngredient3},
-        {data.drinks[0].strIngredient4}
-      </div>
-      <div className="glass-type">Glassware: {data.drinks[0].strGlass}</div>
-      <div className="drink-method">
-        Instructions: {data.drinks[0].strInstructions}
-      </div>
+      <Search drinks={data} />
     </div>
   );
 };
