@@ -1,0 +1,39 @@
+body {
+  background-color: #141414;
+}
+
+.App {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.drink-name {
+  font-size: 120px;
+  font-weight: 400;
+  margin: 2%;
+}
+
+.drink-method {
+  font-size: 20px;
+  margin: 2%;
+}
+.ingredients {
+  font-size: 20px;
+  margin: 2%;
+}
+
+.drink-thumb {
+  height: 500px;
+  width: 600px;
+  margin: 2%;
+}
+.glass-type {
+  font-size: 20px;
+  margin: 2%;
+}
+.search-label {
+  font-size: 20px;
+  color: #ffffff;
+}
